@@ -129,7 +129,6 @@ align-items: center;
 
 .home-cta-two div {
     flex-direction: column;
-    justify-content:;
 }
 
 .home-cta-two h1 {
@@ -216,3 +215,8 @@ align-items: center;
     margin: auto;
 }
 
+/* Profile */
+
+.about-and-stats {
+    
+}
