@@ -150,6 +150,10 @@ align-items: center;
 
 /* FOOTER */
 
+footer {
+    margin-top: 50px;
+}
+
 .footer-wrapper {
     display: flex;
     background-color: #303030;
@@ -217,6 +221,33 @@ align-items: center;
 
 /* Profile */
 
-.about-and-stats {
-    
+.profile-card {
+    padding: 20px;
+    background-color: #303030;
+    border-radius: 20px;
+    box-shadow: 10px 10px 50px;
+    color: white;
+}
+
+.win-loss-card {
+   background-color: #303030;
+
+    border-radius: 20px;
+    box-shadow: 10px 10px 50px;
+    width: 400px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.profile-wrapper {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0;
+}
+
+.profile-tournament-history h1 {
+    color: black;
+    text-align: center;
 }
