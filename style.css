@@ -1,0 +1,40 @@
+/* GLOBAL */
+
+a {
+ font-size: 2rem;   
+
+}
+
+.btn {
+
+    
+}
+
+/* NAVIGATION */
+
+nav {
+    background-color: #303030;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+nav img {
+    width: 150px;
+    height: 150px;
+    padding-left: 50px;
+}
+
+.nav-wrapper {
+    padding-right: 50px;
+
+}
+
+.nav-wrapper a{
+    color: white;
+    padding: 0 30px;
+}
+
+
+/* HOMEPAGE */
