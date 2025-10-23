@@ -73,3 +73,45 @@ nav img {
     padding: 10px 10px;
     
 }
+
+/* upcoming tournaments */
+
+.upcoming-tournaments h1 {
+    color: black;
+    text-align: center;
+}
+
+
+
+.card-wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.tournament-card {
+    display: flex;
+    flex-direction: column;
+align-items: center;
+background-color: #303030;
+width: 500px;
+border-radius: 10px;
+padding: 20px;
+}
+
+.tournament-card h2 {
+    color: white;
+    font-size: 30px;
+}
+
+.tournament-card a {
+    width: 200px;
+    text-align: center;
+    color: white;
+}
+
+.tournament-card p {
+    font-size: 25px;
+    max-width: 75%;
+    color: white;
+}
+
