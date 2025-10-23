@@ -153,9 +153,32 @@ align-items: center;
     display: flex;
     background-color: #303030;
     color: white;
+    font-size: 25px;
+    justify-content: space-around;
+
 }
 
 .footer-wrapper a {
     color: white;
-    text-decoration: none;
+
+}
+
+.footer-wrapper li {
+        list-style: none;
+        padding: 10px 0;
+
+}
+
+.quick-links {
+    margin: 0 20px;
+}
+
+.social-icons {
+    background-color: #303030;
+    text-align: center;
+
+}
+
+.social-icons a {
+    margin: 0 10px;
 }
