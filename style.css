@@ -1,13 +1,25 @@
 /* GLOBAL */
 
-a {
- font-size: 2rem;   
 
+
+a {
+ font-size: 25px;   
+
+}
+
+h1 {
+    font-size: 75px;
+    color: white;
 }
 
 .btn {
 
-    
+    background-color: rgb(143, 0, 0);
+    padding: 5px 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 35px;
 }
 
 /* NAVIGATION */
@@ -38,3 +50,26 @@ nav img {
 
 
 /* HOMEPAGE */
+
+.home-cta {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-image: url(images/pokeballOnCards.jpeg);
+    background-position: center;
+    background-size: 100%;
+}
+
+.home-cta .btn {
+    width: 150px;
+    margin: auto;
+    text-align: center;
+}
+
+.home-cta h1 {
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 10px;
+    
+}
