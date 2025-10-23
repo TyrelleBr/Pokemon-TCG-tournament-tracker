@@ -1,6 +1,8 @@
 /* GLOBAL */
 
-
+body {
+    margin: 0;
+}
 
 a {
  font-size: 25px;   
@@ -182,3 +184,35 @@ align-items: center;
 .social-icons a {
     margin: 0 10px;
 }
+
+/* sign up page */
+
+.sign-up {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sign-up h1 {
+    color: black;
+    margin: 0;
+    padding: 25px;
+}
+
+.sign-up-card form {
+    font-size: 25px;
+    
+}
+
+
+
+.sign-up img {
+    max-width: 50%;
+}
+
+.sign-up-card {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
