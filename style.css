@@ -189,11 +189,10 @@ align-items: center;
 /* sign up page */
 
 form {
+ 
     display: flex;
     flex-direction: column;
 }
-
-form
 
 .sign-up {
     display: flex;
@@ -218,6 +217,9 @@ form
 }
 
 .sign-up-card {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
     margin: auto;
 }
 
