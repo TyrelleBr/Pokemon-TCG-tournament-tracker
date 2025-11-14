@@ -1,298 +1,283 @@
 /* GLOBAL */
 
 body {
-    margin: 0;
+  margin: 0;
 }
 
 a {
- font-size: 25px;   
-
+  font-size: 25px;
 }
 
 h1 {
-    font-size: 75px;
-    color: white;
+  font-size: 75px;
+  color: white;
 }
 
 .btn {
-
-    background-color: rgb(143, 0, 0);
-    padding: 5px 10px;
-    border-radius: 10px;
-    text-decoration: none;
-    color: white;
-    font-size: 35px;
+  background-color: rgb(143, 0, 0);
+  padding: 5px 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  font-size: 35px;
 }
 
 /* NAVIGATION */
 
 nav {
-    background-color: #303030;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
+  background-color: #303030;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 nav img {
-    width: 150px;
-    height: 150px;
-    padding-left: 50px;
+  width: 150px;
+  height: 150px;
+  padding-left: 50px;
 }
 
 .nav-wrapper {
-    padding-right: 50px;
-
+  padding-right: 50px;
 }
 
-.nav-wrapper a{
-    color: white;
-    padding: 0 30px;
+.nav-wrapper a {
+  color: white;
+  padding: 0 30px;
 }
-
 
 /* HOMEPAGE */
 
 .home-cta {
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    background-image: url(images/pokeballOnCards.jpeg);
-    background-position: center;
-    background-size: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-image: url(images/pokeballOnCards.jpeg);
+  background-position: center;
+  background-size: 100%;
 }
 
 .home-cta .btn {
-    width: 150px;
-    margin: auto;
-    text-align: center;
+  width: 150px;
+  margin: auto;
+  text-align: center;
 }
 
 .home-cta h1 {
-    margin: auto;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px 10px;
-    
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 10px;
 }
 
 /* upcoming tournaments */
 
 .upcoming-tournaments h1 {
-    color: black;
-    text-align: center;
+  color: black;
+  text-align: center;
 }
 
-
-
 .card-wrapper {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 .tournament-card {
-    display: flex;
-    flex-direction: column;
-align-items: center;
-background-color: #303030;
-width: 500px;
-border-radius: 10px;
-padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #303030;
+  width: 500px;
+  border-radius: 10px;
+  padding: 20px;
 }
 
 .tournament-card h2 {
-    color: white;
-    font-size: 30px;
+  color: white;
+  font-size: 30px;
 }
 
 .tournament-card a {
-    width: 200px;
-    text-align: center;
-    color: white;
+  width: 200px;
+  text-align: center;
+  color: white;
 }
 
 .tournament-card p {
-    font-size: 25px;
-    max-width: 75%;
-    color: white;
+  font-size: 25px;
+  max-width: 75%;
+  color: white;
 }
-
-
 
 /* second call to action */
 
 .home-cta-two {
-display: flex;
-padding: 50px 0;
-align-items: center;
+  display: flex;
+  padding: 50px 0;
+  align-items: center;
 }
 
 .home-cta-two div {
-    flex-direction: column;
+  flex-direction: column;
 }
 
 .home-cta-two h1 {
-    color: black;
-    text-align: center;
+  color: black;
+  text-align: center;
 }
 
 .home-cta-two p {
-    text-align: center;
-    max-width: 75%;
-    margin: auto;
-    font-size: 25px;
+  text-align: center;
+  max-width: 75%;
+  margin: auto;
+  font-size: 25px;
 }
 
 .home-cta-two img {
-    max-width: 50%;
+  max-width: 50%;
 }
-
 
 /* FOOTER */
 
-
-
 .footer-wrapper {
-    display: flex;
-    background-color: #303030;
-    color: white;
-    font-size: 25px;
-    justify-content: space-around;
-
+  display: flex;
+  background-color: #303030;
+  color: white;
+  font-size: 25px;
+  justify-content: space-around;
 }
 
 .footer-wrapper a {
-    color: white;
-
+  color: white;
 }
 
 .footer-wrapper li {
-        list-style: none;
-        padding: 10px 0;
-
+  list-style: none;
+  padding: 10px 0;
 }
 
 .quick-links {
-    margin: 0 20px;
+  margin: 0 20px;
 }
 
 .social-icons {
-    background-color: #303030;
-    text-align: center;
-
+  background-color: #303030;
+  text-align: center;
 }
 
 .social-icons a {
-    margin: 0 10px;
+  margin: 0 10px;
 }
 
 /* sign up page */
 
 form {
- 
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .sign-up {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .sign-up h1 {
-    color: black;
-    margin: 0;
-    padding: 25px;
+  color: black;
+  margin: 0;
+  padding: 25px;
 }
 
 .sign-up-card form {
-    font-size: 25px;
-    
+  font-size: 25px;
 }
 
-
-
 .sign-up img {
-    max-width: 50%;
+  max-width: 50%;
 }
 
 .sign-up-card {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto;
+  background: #ffffff;
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.25);
+  padding: 40px 50px;
+  border-radius: 20px;
+  max-width: 450px;
+  width: 100%;
 }
 
 /* Profile */
 
 .profile-card {
-    padding: 20px;
-    background-color: #303030;
-    border-radius: 20px;
-    box-shadow: 10px 10px 50px;
-    color: white;
+  padding: 20px;
+  background-color: #303030;
+  border-radius: 20px;
+  box-shadow: 10px 10px 50px;
+  color: white;
 }
 
 .win-loss-card {
-   background-color: #303030;
+  background-color: #303030;
 
-    border-radius: 20px;
-    box-shadow: 10px 10px 50px;
-    width: 400px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+  border-radius: 20px;
+  box-shadow: 10px 10px 50px;
+  width: 400px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .profile-wrapper {
-    display: flex;
-    justify-content: space-around;
-    margin: 50px 0;
+  display: flex;
+  justify-content: space-around;
+  margin: 50px 0;
 }
 
 .profile-tournament-history h1 {
-    color: black;
-    text-align: center;
+  color: black;
+  text-align: center;
 }
 
 /* tournament details page */
 
 .meow {
-    color: black;
-    text-align: center;
-    margin: 75px 0;
+  color: black;
+  text-align: center;
+  margin: 75px 0;
 }
 
 .details img {
-    max-width: 50%;
+  max-width: 50%;
 }
 
 .tournament-details-card {
-    box-shadow: 11px 22px 50px;
-    border-radius: 20px;
-    max-width: 800px;
-    text-align: center;
-    margin: auto;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
+  box-shadow: 11px 22px 50px;
+  border-radius: 20px;
+  max-width: 800px;
+  text-align: center;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .tournament-details-card h1 {
-    color: black;
+  color: black;
 }
 
 .tournament-details-card p {
-    max-width: 500px;
-    font-size: 25px;
-    margin: auto;
+  max-width: 500px;
+  font-size: 25px;
+  margin: auto;
 }
 
 .date-time {
-    display: flex;
-    gap: 50px;
-    justify-content: center;
-    margin: 50px 0;
-    font-size: 30px;
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  margin: 50px 0;
+  font-size: 30px;
 }
