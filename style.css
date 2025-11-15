@@ -15,11 +15,11 @@ h1 {
 
 .btn {
   background-color: rgb(143, 0, 0);
-  padding: 5px 10px;
+  padding: 10px 15px;
   border-radius: 10px;
   text-decoration: none;
   color: white;
-  font-size: 35px;
+  font-size: 25px;
 }
 
 /* NAVIGATION */
@@ -43,7 +43,8 @@ nav img {
 
 .nav-wrapper a {
   color: white;
-  padding: 0 30px;
+  padding: 5px 30px;
+  text-decoration: none;
 }
 
 /* HOMEPAGE */
@@ -68,9 +69,14 @@ nav img {
   margin: auto;
   background-color: rgba(0, 0, 0, 0.5);
   padding: 10px 10px;
+  border-radius: 30px;
 }
 
 /* upcoming tournaments */
+
+.upcoming-tournaments {
+    padding-bottom: 50px;
+}
 
 .upcoming-tournaments h1 {
   color: black;
@@ -113,7 +119,6 @@ nav img {
 
 .home-cta-two {
   display: flex;
-  padding: 50px 0;
   align-items: center;
 }
 
