@@ -1,5 +1,7 @@
 <?php
 
+include '../config/config.php';
+
 $pageTitle = "Sign-Up";
 
 include '../partials/head.php';
