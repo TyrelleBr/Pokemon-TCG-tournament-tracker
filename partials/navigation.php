@@ -13,7 +13,7 @@
 
                 if (isset($_SESSION['user_id'])) {
                     echo '<a class="btn" href="profile.php">Profile</a>';
-                    echo '<a href="handlers/logout.php">Logout</a>'
+                    echo '<a href="handlers/logout.php">Logout</a>';
                 } else {
                     echo '<a class="btn" href="login.php">Log-in/Sign-up</a>';
                 }
