@@ -1,6 +1,6 @@
 <?php
 
-$pageTitle = "login";
+$pageTitle = "Login";
 
 include '../partials/head.php';
 

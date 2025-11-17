@@ -1,6 +1,6 @@
 <?php
 
-$pageTitle = "login";
+$pageTitle = "Tournament Details";
 
 include '../partials/head.php';
 

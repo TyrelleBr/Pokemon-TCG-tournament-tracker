@@ -1,6 +1,6 @@
 <?php
 
-$pageTitle = "login";
+$pageTitle = "Tournament Bracket";
 
 include '../partials/head.php';
 
