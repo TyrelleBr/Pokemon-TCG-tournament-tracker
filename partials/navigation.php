@@ -7,7 +7,7 @@
         <div class="nav-wrapper">
             <a href="#">Upcomming Tournaments</a>
             <a href="tournamentDetails.php">Tournaments</a>
-            <a href="profile.php">Profile(temp link)</a>
+            <a href="tournamentCreation.php">Create Tournament</a>
             
             <?php 
 
@@ -17,6 +17,8 @@
                     echo '<a class="btn" href="login.php">Log-in/Sign-up</a>';
                 }
             ?>
+
+            <a href="index.php">Logout</a>
 
         </div>
     </nav>
