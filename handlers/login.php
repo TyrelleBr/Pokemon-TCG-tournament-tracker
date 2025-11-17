@@ -19,4 +19,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $statement->execute();
 
     $statementResult = $statement->get_result();
+
+if ($statementResult->num_rows === 1) {
+        
+     $currentUser = $statementResult->fetch_assoc();
+        
+}
+
 }
