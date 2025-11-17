@@ -22,8 +22,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
 if ($statementResult->num_rows === 1) {
         
-     $currentUser = $statementResult->fetch_assoc();
-        
+    $currentUser = $statementResult->fetch_assoc();
+    
+    if (password_verify($password, $currentUser['password'])) {
+        $_SESSION['user_id'] = $currentUser['id'];
+        $_SESSION['username'] = $currentUser['username'];
 }
 
 }
