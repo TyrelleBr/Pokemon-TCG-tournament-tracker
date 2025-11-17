@@ -12,6 +12,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         exit;
     }
 
+    $statement = $dbConnection->prepare("SELECT id, username, password FROM users WHERE username = ?");
     
+    $statement->bind_param("s", $username);
 
 }
