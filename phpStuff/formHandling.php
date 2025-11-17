@@ -37,4 +37,6 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
     $statement = $dbConnection->prepare("SELECT id FROM users WHERE username = ? OR email = ?");
 
     $statement->bind_param("ss", $username, $email);
+
+    $statement->execute();
 }
