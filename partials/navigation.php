@@ -6,7 +6,15 @@
             <a href="#">Upcomming Tournaments</a>
             <a href="tournamentDetails.php">Tournaments</a>
             <a href="profile.php">Profile(temp link)</a>
-            <a class="btn" href="login.php">Log-in/Sign-up</a>
+            
+            <?php 
+                if (isset($_SESSION['user_id'])) {
+                    echo '<a class="btn" href="login.php">Profile</a>';
+                } else {
+                    echo '<a class="btn" href="login.php">Log-in/Sign-up</a>';
+                }
+            ?>
+            
         </div>
     </nav>
 </header>
