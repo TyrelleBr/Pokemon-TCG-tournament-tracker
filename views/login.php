@@ -13,10 +13,10 @@ include '../partials/head.php';
         <h1>Login</h1>
 
         <form method="POST" action="../handlers/login.php">
-          <label class="sign-up-label" for="fname">Username:</label><br />
-          <input type="text" id="fname" name="fname" /><br />
-          <label for="lname">Password:</label><br />
-          <input type="text" id="lname" name="lname" /><br />
+          <label class="sign-up-label" for="username">Username:</label><br />
+          <input type="text" id="username" name="username" /><br />
+          <label for="password">Password:</label><br />
+          <input type="text" id="password" name="password" /><br />
           <input class="btn" type="submit" value="Submit" />
         </form>
 
