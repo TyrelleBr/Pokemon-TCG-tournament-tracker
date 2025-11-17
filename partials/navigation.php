@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <body>
 <header>
     <nav>
@@ -8,13 +10,14 @@
             <a href="profile.php">Profile(temp link)</a>
             
             <?php 
+
                 if (isset($_SESSION['user_id'])) {
-                    echo '<a class="btn" href="login.php">Profile</a>';
+                    echo '<a class="btn" href="profile.php">Profile</a>';
                 } else {
                     echo '<a class="btn" href="login.php">Log-in/Sign-up</a>';
                 }
             ?>
-            
+
         </div>
     </nav>
 </header>
