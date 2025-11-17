@@ -53,9 +53,10 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
 
     $statement->execute();
 
-    echo "Registration Successul";
-
     $statement->close();
     $dbConnection->close();
+
+    header("Location: /Pokemon-TCG-tournament-tracker/views/index.php");
+    exit;
 
 }
