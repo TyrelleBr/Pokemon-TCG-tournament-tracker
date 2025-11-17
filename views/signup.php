@@ -12,7 +12,7 @@ include '../partials/head.php';
       <div class="sign-up-card">
         <h1>Sign Up</h1>
 
-        <form>
+        <form method="post" action="#"></form>
           <label class="sign-up-label" for="username">Username:</label><br />
           <input type="text" id="fname" name="username" /><br />
           <label for="lname">Password:</label><br />
