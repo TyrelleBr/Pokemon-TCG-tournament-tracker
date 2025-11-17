@@ -27,6 +27,16 @@ if ($statementResult->num_rows === 1) {
     if (password_verify($password, $currentUser['password'])) {
         $_SESSION['user_id'] = $currentUser['id'];
         $_SESSION['username'] = $currentUser['username'];
+
+        header("Location: /Pokemon-TCG-tournament-tracker/views/index.php");
+        exit;
+        
+    } else{
+        echo "Please enter the correct password";
+    }
+
+    } else {
+        echo "Please enter the correct username";
 }
 
 }
