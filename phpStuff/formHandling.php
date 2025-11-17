@@ -26,4 +26,11 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         $errors[] = "Invalid email format.";
     }
+
+    if (!empty($errors)) {
+        foreach ($errors as $error) {
+            echo "<p>$error</p>";
+        }
+        exit;
+    }
 }
