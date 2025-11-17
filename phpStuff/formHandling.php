@@ -39,4 +39,8 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
     $statement->bind_param("ss", $username, $email);
 
     $statement->execute();
+
+    $statement->store_result();
+
+    
 }
