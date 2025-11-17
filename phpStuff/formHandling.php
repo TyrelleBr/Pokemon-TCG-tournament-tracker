@@ -49,5 +49,6 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
     
     $statement->close();
 
+    $passwordHash = password_hash($password, PASSWORD_DEFAULT);
 
 }
