@@ -52,4 +52,10 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
     $passwordHash = password_hash($password, PASSWORD_DEFAULT);
 
     $statement = $dbConnection->prepare("INSERT INTO users (username, password, email, dateOfBirth) VALUES (?, ?, ?, ?)");
+
+    $statement->bind_param("ssss", $username, $passwordHash, $email, $dateOfBirth);
+
+    $statement->execute();
+
+    echo "Registration Successul";
 }
