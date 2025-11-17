@@ -108,6 +108,7 @@ nav img {
   width: 500px;
   border-radius: 20px;
   padding: 20px;
+  box-shadow: 10px 20px 10px rgba(0, 0, 0, 0.2);
 }
 
 .tournament-card h2 {
@@ -237,7 +238,7 @@ form {
   padding: 50px;
   background-color: #303030;
   border-radius: 20px;
-  box-shadow: 10px 10px 50px;
+  box-shadow: 10px 20px 10px rgba(0, 0, 0, 0.2);
   color: white;
 }
 
