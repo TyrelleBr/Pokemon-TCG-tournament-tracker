@@ -51,4 +51,5 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
 
     $passwordHash = password_hash($password, PASSWORD_DEFAULT);
 
+    $statement = $dbConnection->prepare("INSERT INTO users (username, password, email, dateOfBirth) VALUES (?, ?, ?, ?)");
 }
