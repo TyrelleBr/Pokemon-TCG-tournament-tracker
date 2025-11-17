@@ -21,8 +21,6 @@ include '../partials/head.php';
           <input type="password" id="password" name="password" /><br />
           <label for="email">Email:</label><br />
           <input type="email" id="email" name="email" /><br />
-          <label for="lname">Date of Birth:</label><br />
-          <input type="date" id="dateOfBirth" name="dateOfBirth" /><br />
           <input class="btn" type="submit" value="Submit" />
         </form>
       </div>

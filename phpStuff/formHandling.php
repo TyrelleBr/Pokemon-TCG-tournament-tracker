@@ -6,7 +6,6 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
     $username = trim($_POST['username']);
     $password = trim($_POST['password']);
     $email = trim($_POST['email']);
-    $dateOfBirth = trim($_POST['dateOfBirth']); 
 
     $errors = [];
 
@@ -18,9 +17,6 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
     }
     if (empty($email)) {
         $errors[] = "Emaiil is required";
-    }
-    if (empty($dateOfBirth)) {
-        $errors[] = "Your date of birth is required";
     }
 
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
@@ -51,9 +47,9 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
 
     $passwordHash = password_hash($password, PASSWORD_DEFAULT);
 
-    $statement = $dbConnection->prepare("INSERT INTO users (username, password, email, dateOfBirth) VALUES (?, ?, ?, ?)");
+    $statement = $dbConnection->prepare("INSERT INTO users (username, password, email) VALUES (?, ?, ?)");
 
-    $statement->bind_param("ssss", $username, $passwordHash, $email, $dateOfBirth);
+    $statement->bind_param("sss", $username, $passwordHash, $email);
 
     $statement->execute();
 
