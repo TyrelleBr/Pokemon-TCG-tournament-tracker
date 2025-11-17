@@ -10,7 +10,7 @@ include '../partials/head.php';
 
 <section class="sign-up">
       <div class="sign-up-card">
-        <h1>Login</h1>
+        <h1>Sign Up</h1>
 
         <form>
           <label class="sign-up-label" for="username">Username:</label><br />

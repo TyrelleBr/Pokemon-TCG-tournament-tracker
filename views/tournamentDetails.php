@@ -23,7 +23,9 @@ include '../partials/head.php';
             <h3>Date: June 1st 2026</h3>
             <h3>Location rd 123</h3>
         </div>
-        <a class="btn" href="tournamentSignup.html">Register</a>
+
+        <a class="btn" href="tournamentBracket.php">View Bracket</a>
+        <a class="btn" href="tournamentSignup.php">Register</a>
     </div>
 </section>
 
