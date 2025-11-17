@@ -42,5 +42,12 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
 
     $statement->store_result();
 
+    if ($statement->num_rows > 0) {
+        echo "Username or email is already taken";
+        exit;
+    }
     
+    $statement->close();
+
+
 }
