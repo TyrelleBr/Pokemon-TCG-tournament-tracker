@@ -16,4 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     
     $statement->bind_param("s", $username);
 
+    $statement->execute();
+
+    $statementResult = $statement->get_result();
 }
