@@ -22,4 +22,8 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
     if (empty($dateOfBirth)) {
         $errors[] = "Your date of birth is required";
     }
+
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $errors[] = "Invalid email format.";
+    }
 }
