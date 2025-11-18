@@ -5,8 +5,7 @@
     <nav>
         <a href="index.php"><img src="../images/Pokeball.png" alt="Logo" width="250px" height="250px" /></a>
         <div class="nav-wrapper">
-            <a href="#">Upcomming Tournaments</a>
-            <a href="tournamentDetails.php">Tournaments</a>
+            <a href="../views/upcoming-tournaments.php">Upcomming Tournaments</a>
             <a href="tournamentCreation.php">Create Tournament</a>
             
             <?php 
