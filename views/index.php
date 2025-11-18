@@ -1,5 +1,10 @@
 <?php
 
+if (isset($_GET['success'])) {
+    echo '<script>alert("Tournament Created");</script>';
+}
+
+
 $pageTitle = "Home";
 
 include '../partials/head.php';
