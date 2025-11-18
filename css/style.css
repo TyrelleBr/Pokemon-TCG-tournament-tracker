@@ -344,3 +344,26 @@ form {
   font-size: 40px;
 }
 
+/* Create a Tournament page */
+
+.create-tournament-card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto;
+  background: #ffffff;
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.25);
+  padding: 40px 50px;
+  border-radius: 20px;
+  max-width: 600px;
+  width: 100%;
+}
+
+.create-tournament-card h1 {
+  color: black;
+}
+
+.create-tournament-card .btn {
+  margin-top: 20px;
+}
+
