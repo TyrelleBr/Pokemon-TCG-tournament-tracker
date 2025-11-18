@@ -6,6 +6,8 @@ include '../partials/head.php';
 
 include '../partials/navigation.php';
 
+include '../handlers/createTournament.php';
+
 ?>
 
 <div class="create-tournament-card">
