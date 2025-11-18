@@ -6,13 +6,11 @@ include '../partials/head.php';
 
 include '../partials/navigation.php';
 
-include '../handlers/createTournament.php';
-
 ?>
 
 <div class="create-tournament-card">
 
-<form class="createTForm" action="createTournament.php" method="POST">
+<form class="createTForm" action="../handlers/createTournament.php" method="POST">
     <h1>Tournament Details</h1>
     <h2>Tournament Name</h2>
     <label for="tournamentName"></label>
