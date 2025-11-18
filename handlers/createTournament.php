@@ -16,5 +16,14 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     $statement->bind_param("ssssss",  $tournamentName,  $description, $rules, $startDate, $location,  $contactEmail);
 
-    
+    if($statement->execute()) {
+        
+        header("Location: ../views/index.php?success=1");
+        exit();
+
+    } else {
+        echo $statement->error;
+    }
+
+    $statement->close();
 }
