@@ -11,5 +11,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $startDate = trim($_POST['startDate']);
     $location = trim($_POST['location']);
     $contactEmail = trim($_POST['contactEmail']);
+
+
+    $statement = $dbConnection->prepare("INSERT INTO tournaments (tournamentName, description, rules, startDate, location, contactEmail) VALUES (?, ?, ?, ?, ?, ?");
+
     
 }
