@@ -9,23 +9,39 @@ include '../partials/head.php';
 <?php include '../partials/navigation.php'; ?>
 
 <section>
-    <h1 class="meow">Tournament Details</h1>
+    <h1 class="page-title">Tournament Details</h1>
+
     <div class="tournament-details-card">
-        <div class="details">
-            <img src="../images/defaultAvatar.png" alt="default profile picture">
-            <h2>Hosted By: randomUser123</h2>
-            <h1>Tournament Name</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus ea numquam reprehenderit esse beatae
-                ipsum sequi cupiditate quos? Nemo repellat, exercitationem quia nihil a veritatis libero provident ab
-                illo voluptatem!</p>
-        </div>
-        <div class="date-time">
-            <h3>Date: June 1st 2026</h3>
-            <h3>Location rd 123</h3>
+        <div class="details-header">
+            <img src="../images/defaultAvatar.png" alt="Host profile picture">
+            <div class="host-info">
+
+                <p>Contact Host: randomUser123@example.com</p>
+            </div>
         </div>
 
-        <a class="btn" href="tournamentBracket.php">View Bracket</a>
-        <a class="btn" href="tournamentSignup.php">Register</a>
+        <h1 class="tournament-name">Tournament Name</h1>
+
+        <div class="tournament-info">
+            <div class="detailsAndRules">
+                <p class="description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus ea numquam reprehenderit esse beatae
+                    ipsum sequi cupiditate quos?
+                </p>
+                <p class="rules">
+                    <strong>Rules:</strong> No cheating, standard TCG rules apply.
+                </p>
+            </div>
+            <div class="date-location">
+                <p><strong>Date:</strong> June 1st, 2026</p>
+                <p><strong>Location:</strong> 123 Main Street, City</p>
+            </div>
+        </div>
+
+        <div class="action-buttons">
+            <a class="btn" href="tournamentBracket.php">View Bracket</a>
+            <a class="btn" href="tournamentSignup.php">Register</a>
+        </div>
     </div>
 </section>
 

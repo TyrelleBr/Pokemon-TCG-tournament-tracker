@@ -15,7 +15,7 @@ include '../partials/navigation.php';
 
 <section class="home-cta">
       <h1>Host your own Tournaments!</h1>
-      <a href="#" class="btn">Host now</a>
+      <a href="../views/upcomingTournaments.php" class="btn">Host now</a>
     </section>
 
     <section class="upcoming-tournaments">
