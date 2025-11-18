@@ -4,11 +4,9 @@ $pageTitle = "Home";
 
 include '../partials/head.php';
 
+include '../partials/navigation.php'; 
+
 ?>
-
-<body>
-
-<?php include '../partials/navigation.php'; ?>
 
 <section class="home-cta">
       <h1>Host your own Tournaments!</h1>
@@ -89,5 +87,3 @@ include '../partials/head.php';
     
     <?php include '../partials/footer.php'; ?>
     
-    </body>
-</html>
