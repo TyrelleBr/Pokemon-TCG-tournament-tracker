@@ -19,9 +19,9 @@ $result = $dbConnection->query("SELECT id, tournamentName, description, startDat
 
 while ($row = $result->fetch_assoc()) {
     echo '<div class="tournament-card">';
-    echo '<h2>' . $row['tournamentName'] . '</h2>';
+    echo '<h2>' . htmlspecialchars($row['tournamentName']) . '</h2>';
     echo '<h3>Description:</h3>';
-    echo '<p>' . $row['description'] . '</p>';
+    echo '<p>' . htmlspecialchars($row['description']) . '</p>';
     echo '<a href="tournamentDetails.php?id=' . $row['id'] . '">View More</a>';
     echo '</div>';
 }
