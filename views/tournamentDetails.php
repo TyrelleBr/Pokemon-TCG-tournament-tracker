@@ -2,11 +2,16 @@
 
 $pageTitle = "Tournament Details";
 
+include '../handlers/config.php';
 include '../partials/head.php';
+include '../partials/navigation.php';
+
+if(!isset($_GET['id'])) {
+    echo 'Tournament not found.';
+    exit;
+}
 
 ?>
-
-<?php include '../partials/navigation.php'; ?>
 
 <section>
     <h1 class="page-title">Tournament Details</h1>
