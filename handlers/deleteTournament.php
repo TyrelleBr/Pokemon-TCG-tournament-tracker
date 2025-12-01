@@ -17,3 +17,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         echo "Not allowed.";
         exit;
     } 
+
+    $statement = $dbConnection->prepare("DELETE FROM tournaments WHERE id = ?");
+    $statement->bind_param("i", $id);
+    $statement->execute();
+    $statement->close();
+
+    header("location: ../views/index.php");
+    exit;
+
+}
