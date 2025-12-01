@@ -18,6 +18,14 @@ $statement = $dbConnection->prepare("SELECT * FROM tournaments WHERE id = ?");
 $statement->bind_param("i", $tournamentId);
 $statement->execute();
 $result = $statement->get_result();
+
+if ($result->num_rows === 0) {
+    echo 'Tournament not found.';
+    exit;
+}
+
+$tournament = $result->fetch_assoc();
+$statement->close();
 ?>
 
 <section>
