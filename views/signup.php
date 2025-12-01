@@ -1,6 +1,6 @@
 <?php
 
-include '../phpStuff/config.php';
+include '../handlers/config.php';
 
 $pageTitle = "Sign-Up";
 
