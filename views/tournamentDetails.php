@@ -36,25 +36,23 @@ $statement->close();
             <img src="../images/defaultAvatar.png" alt="Host profile picture">
             <div class="host-info">
 
-                <p>Contact Host: randomUser123@example.com</p>
+                <p>Contact Host: <?= htmlspecialchars($tournament['contactEmail']) ?></p>
             </div>
         </div>
 
-        <h1 class="tournament-name">Tournament Name</h1>
+        <h1 class="tournament-name"><?= htmlspecialchars($tournament['tournamentName']) ?></h1>
 
         <div class="tournament-info">
             <div class="detailsAndRules">
-                <p class="description">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus ea numquam reprehenderit esse beatae
-                    ipsum sequi cupiditate quos?
+                <p class="description"> <?= htmlspecialchars($tournament['description']) ?>
                 </p>
                 <p class="rules">
-                    <strong>Rules:</strong> No cheating, standard TCG rules apply.
+                    <strong>Rules: </strong> <?= htmlspecialchars($tournament['rules']) ?>
                 </p>
             </div>
             <div class="date-location">
-                <p><strong>Date:</strong> June 1st, 2026</p>
-                <p><strong>Location:</strong> 123 Main Street, City</p>
+                <p><strong>Date:</strong> <?= htmlspecialchars($tournament['startDate']) ?></p>
+                <p><strong>Location: </strong><?= htmlspecialchars($tournament['location']) ?></p>
             </div>
         </div>
 
