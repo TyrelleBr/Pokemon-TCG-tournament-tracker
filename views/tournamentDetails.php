@@ -14,6 +14,10 @@ if(!isset($_GET['id'])) {
 
 $tournamentId = (int)$_GET['id'];
 
+$statement = $dbConnection->prepare("SELECT * FROM tournaments WHERE id = ?");
+$statement->bind_param("i", $tournamentId);
+$statement->execute();
+$result = $statement->get_result();
 ?>
 
 <section>
