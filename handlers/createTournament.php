@@ -18,9 +18,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $userId = $_SESSION['user_id'];
 
 
-    $statement = $dbConnection->prepare("INSERT INTO tournaments (tournamentName, description, rules, startDate, location, contactEmail) VALUES (?, ?, ?, ?, ?, ?)");
+    $statement = $dbConnection->prepare("INSERT INTO tournaments (tournamentName, description, rules, startDate, location, contactEmail, userId) VALUES (?, ?, ?, ?, ?, ?, ?)");
 
-    $statement->bind_param("ssssss",  $tournamentName,  $description, $rules, $startDate, $location,  $contactEmail);
+    $statement->bind_param("ssssssi",  $tournamentName,  $description, $rules, $startDate, $location,  $contactEmail, $userId);
 
     if($statement->execute()) {
         
