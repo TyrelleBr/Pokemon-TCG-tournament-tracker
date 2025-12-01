@@ -63,4 +63,16 @@ $statement->close();
     </div>
 </section>
 
+<?php if (isset($_SESSION['user_id']) && isset($tournament['userId']) && $_SESSION['user_id'] == $tournament['userId']) : ?>
+
+
+    <div class="delete-btn">
+    <form method="POST" action="../handlers/deleteTournament.php">
+        <input type="hidden" name="id" value="<?= (int)$tournament['id'] ?>">
+        <button class="btn" type="submit">Delete</button>
+    </form>
+    </div>
+    
+<?php endif ?>
+
 <?php include '../partials/footer.php'; ?>
