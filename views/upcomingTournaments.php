@@ -22,7 +22,7 @@ while ($row = $result->fetch_assoc()) {
     echo '<h2>' . htmlspecialchars($row['tournamentName']) . '</h2>';
     echo '<h3>Description:</h3>';
     echo '<p>' . htmlspecialchars($row['description']) . '</p>';
-    echo '<a href="tournamentDetails.php?id=' . (int)$row['id'] . '">View More</a>';
+    echo '<a class="btn" href="tournamentDetails.php?id=' . (int)$row['id'] . '">Details</a>';
     echo '</div>';
 }
 
