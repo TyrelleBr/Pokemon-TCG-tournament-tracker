@@ -12,3 +12,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $result = $statement->get_result();
     $tournament = $result->fetch_assoc();
     $statement->close();
+
+    if (!isset($_SESSION['user_id']) || $_SESSION['user_id'] != $tournament['userId']) {
+        echo "Not allowed.";
+        exit;
+    } 
