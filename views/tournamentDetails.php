@@ -11,6 +11,9 @@ if(!isset($_GET['id'])) {
     exit;
 }
 
+
+$tournamentId = (int)$_GET['id'];
+
 ?>
 
 <section>
