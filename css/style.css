@@ -474,6 +474,24 @@ form {
   border-left: 1px solid black;
 }
 
+/* upcoming tournaments page */
+
+.upcoming-tournaments {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0 50px;
+  box-sizing: border-box;
+}
+
+.tournament-card h3 {
+  color: white;
+}
+
 /* Mobile styling */
 
 @media (max-width: 1000px) {
@@ -560,4 +578,14 @@ form {
     width: 90%;
     margin: auto;
   }
+
+  .upcoming-tournaments {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .tournament-card h3 {
+  color: white;
+}
 }
